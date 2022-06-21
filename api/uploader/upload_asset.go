@@ -9,20 +9,20 @@ import (
 
 // UploadParam defines upload parameters
 type UploadParam struct {
-	FileName                string `json:"fileName,omitempty"`
-	UseUniqueFileName       string `json:"useUniqueFileName,omitempty"`
-	Tags                    string `json:"tags,omitempty"`
-	Folder                  string `json:"folder,omitempty"`        // default value:  /
-	IsPrivateFile           *bool  `json:"isPrivateFile,omitempty"` // default: false
-	CustomCoordinates       string `json:"customCoordinates,omitempty"`
-	ResponseFields          string `json:"responseFields,omitempty"`
-	Extensions              string `json:"extensions,omitempty"`
-	WebhookUrl              string `json:"webhookUrl,omitempty"`
-	OverwriteFile           *bool  `json:"overwriteFile,omitempty"`
-	OverwriteAITags         *bool  `json:"overwriteAITags,omitempty"`
-	OverwriteTags           *bool  `json:"overwriteTags,omitempty"`
-	OverwriteCustomMetadata *bool  `json:"overwriteCustomMetadata,omitempty"`
-	CustomMetadata          string `json:"customMetadata,omitempty"`
+	FileName                string         `json:"fileName,omitempty"`
+	UseUniqueFileName       string         `json:"useUniqueFileName,omitempty"`
+	Tags                    string         `json:"tags,omitempty"`
+	Folder                  string         `json:"folder,omitempty"`        // default value:  /
+	IsPrivateFile           *bool          `json:"isPrivateFile,omitempty"` // default: false
+	CustomCoordinates       string         `json:"customCoordinates,omitempty"`
+	ResponseFields          string         `json:"responseFields,omitempty"`
+	Extensions              string         `json:"extensions,omitempty"`
+	WebhookUrl              string         `json:"webhookUrl,omitempty"`
+	OverwriteFile           *bool          `json:"overwriteFile,omitempty"`
+	OverwriteAITags         *bool          `json:"overwriteAITags,omitempty"`
+	OverwriteTags           *bool          `json:"overwriteTags,omitempty"`
+	OverwriteCustomMetadata *bool          `json:"overwriteCustomMetadata,omitempty"`
+	CustomMetadata          map[string]any `json:"customMetadata,omitempty"`
 }
 
 type UploadResult struct {
